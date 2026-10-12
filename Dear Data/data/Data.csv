@@ -17,3 +17,147 @@ match,order,attacker,defender,myKO
 8,2,Flutter Mane,Chien-Pao,FALSE
 9,2,Flutter Mane,Chien-Pao,FALSE
 10,2,Flutter Mane,Chien-Pao,FALSE
+11,1,Incineroar,Urshifu,TRUE
+11,2,Miraidon,Tornadus,TRUE
+11,6,Iron Hands,Ogerpon,FALSE
+12,1,Iron Hands,Miraidon,TRUE
+13,1,Amoonguss,Tornadus,FALSE
+13,5,Indeedee,Urshifu,FALSE
+14,5,Garchomp,Indeedee,TRUE
+14,7,Indeedee,Chien-Pao,FALSE
+15,4,Ogerpon,Flutter Mane,TRUE
+16,2,Landorus,Raging Bolt,FALSE
+16,5,Chien-Pao,Kingambit,FALSE
+17,1,Flutter Mane,Garchomp,FALSE
+17,4,Miraidon,Amoonguss,TRUE
+18,2,Urshifu,Iron Hands,FALSE
+18,7,Kingambit,Chien-Pao,FALSE
+19,3,Garchomp,Landorus,TRUE
+19,6,Tornadus,Flutter Mane,FALSE
+20,1,Chien-Pao,Incineroar,FALSE
+21,2,Miraidon,Urshifu,TRUE
+21,8,Amoonguss,Kingambit,FALSE
+22,4,Flutter Mane,Iron Hands,FALSE
+22,6,Ogerpon,Garchomp,TRUE
+23,1,Raging Bolt,Chien-Pao,FALSE
+24,3,Incineroar,Miraidon,TRUE
+24,5,Urshifu,Tornadus,FALSE
+25,2,Kingambit,Flutter Mane,FALSE
+25,7,Garchomp,Amoonguss,TRUE
+26,1,Iron Hands,Ogerpon,FALSE
+27,3,Landorus,Chien-Pao,TRUE
+27,6,Flutter Mane,Urshifu,FALSE
+28,2,Miraidon,Kingambit,TRUE
+28,4,Tornadus,Garchomp,FALSE
+29,1,Amoonguss,Incineroar,FALSE
+30,5,Urshifu,Flutter Mane,TRUE
+30,8,Chien-Pao,Miraidon,FALSE
+31,2,Garchomp,Ogerpon,TRUE
+31,7,Iron Hands,Tornadus,FALSE
+32,1,Flutter Mane,Kingambit,FALSE
+32,4,Raging Bolt,Urshifu,FALSE
+33,3,Miraidon,Chien-Pao,TRUE
+34,2,Incineroar,Amoonguss,FALSE
+34,6,Landorus,Flutter Mane,TRUE
+35,1,Urshifu,Garchomp,FALSE
+36,5,Kingambit,Miraidon,TRUE
+36,8,Ogerpon,Iron Hands,FALSE
+37,2,Chien-Pao,Tornadus,FALSE
+37,6,Flutter Mane,Amoonguss,FALSE
+38,1,Garchomp,Urshifu,TRUE
+39,4,Miraidon,Incineroar,FALSE
+39,7,Iron Hands,Kingambit,FALSE
+40,2,Flutter Mane,Ogerpon,TRUE
+40,5,Raging Bolt,Chien-Pao,FALSE
+41,1,Tornadus,Miraidon,FALSE
+42,3,Amoonguss,Garchomp,TRUE
+42,8,Urshifu,Kingambit,FALSE
+43,2,Chien-Pao,Flutter Mane,TRUE
+43,6,Incineroar,Iron Hands,FALSE
+44,1,Miraidon,Landorus,FALSE
+45,4,Garchomp,Tornadus,TRUE
+45,7,Kingambit,Amoonguss,FALSE
+46,2,Ogerpon,Urshifu,FALSE
+47,1,Iron Hands,Flutter Mane,TRUE
+47,3,Raging Bolt,Miraidon,FALSE
+48,5,Chien-Pao,Garchomp,FALSE
+49,2,Flutter Mane,Incineroar,TRUE
+49,6,Landorus,Ogerpon,FALSE
+50,1,Urshifu,Amoonguss,FALSE
+51,3,Miraidon,Iron Hands,TRUE
+51,5,Garchomp,Kingambit,FALSE
+52,2,Tornadus,Chien-Pao,FALSE
+53,1,Incineroar,Flutter Mane,TRUE
+53,7,Ogerpon,Landorus,FALSE
+54,4,Kingambit,Urshifu,FALSE
+55,1,Chien-Pao,Miraidon,TRUE
+55,6,Amoonguss,Garchomp,FALSE
+56,2,Flutter Mane,Tornadus,FALSE
+57,3,Iron Hands,Incineroar,TRUE
+57,8,Urshifu,Ogerpon,FALSE
+58,1,Landorus,Kingambit,FALSE
+59,2,Garchomp,Chien-Pao,TRUE
+59,5,Miraidon,Amoonguss,FALSE
+60,4,Raging Bolt,Flutter Mane,FALSE
+61,1,Urshifu,Tornadus,TRUE
+61,7,Incineroar,Kingambit,FALSE
+62,2,Ogerpon,Miraidon,FALSE
+63,3,Flutter Mane,Garchomp,TRUE
+63,6,Chien-Pao,Iron Hands,FALSE
+64,1,Amoonguss,Urshifu,FALSE
+65,5,Miraidon,Landorus,TRUE
+65,8,Kingambit,Flutter Mane,FALSE
+66,2,Garchomp,Ogerpon,FALSE
+67,1,Iron Hands,Chien-Pao,TRUE
+67,4,Tornadus,Incineroar,FALSE
+68,3,Urshifu,Miraidon,FALSE
+69,2,Flutter Mane,Amoonguss,TRUE
+69,6,Landorus,Kingambit,FALSE
+70,1,Chien-Pao,Garchomp,FALSE
+71,4,Miraidon,Urshifu,TRUE
+71,7,Ogerpon,Iron Hands,FALSE
+72,2,Incineroar,Tornadus,FALSE
+73,1,Garchomp,Flutter Mane,TRUE
+73,5,Kingambit,Chien-Pao,FALSE
+74,3,Amoonguss,Miraidon,FALSE
+75,2,Urshifu,Landorus,TRUE
+75,6,Flutter Mane,Iron Hands,FALSE
+76,1,Raging Bolt,Ogerpon,FALSE
+77,4,Chien-Pao,Incineroar,TRUE
+77,8,Miraidon,Kingambit,FALSE
+78,2,Tornadus,Garchomp,FALSE
+79,1,Iron Hands,Amoonguss,TRUE
+79,5,Urshifu,Flutter Mane,FALSE
+80,3,Ogerpon,Chien-Pao,FALSE
+81,2,Garchomp,Miraidon,TRUE
+81,7,Kingambit,Landorus,FALSE
+82,1,Flutter Mane,Urshifu,FALSE
+83,4,Incineroar,Iron Hands,TRUE
+83,6,Chien-Pao,Tornadus,FALSE
+84,2,Miraidon,Ogerpon,FALSE
+85,1,Landorus,Garchomp,TRUE
+85,5,Amoonguss,Kingambit,FALSE
+86,3,Urshifu,Chien-Pao,FALSE
+87,2,Iron Hands,Flutter Mane,TRUE
+87,8,Tornadus,Miraidon,FALSE
+88,1,Kingambit,Incineroar,FALSE
+89,4,Ogerpon,Garchomp,TRUE
+89,6,Flutter Mane,Landorus,FALSE
+90,2,Chien-Pao,Amoonguss,FALSE
+91,1,Miraidon,Urshifu,TRUE
+91,5,Garchomp,Iron Hands,FALSE
+92,3,Tornadus,Kingambit,FALSE
+93,2,Flutter Mane,Chien-Pao,TRUE
+93,7,Incineroar,Ogerpon,FALSE
+94,1,Urshifu,Miraidon,FALSE
+95,4,Landorus,Amoonguss,TRUE
+95,8,Iron Hands,Garchomp,FALSE
+96,2,Chien-Pao,Flutter Mane,FALSE
+97,1,Ogerpon,Kingambit,TRUE
+97,6,Miraidon,Tornadus,FALSE
+98,3,Garchomp,Incineroar,FALSE
+99,2,Flutter Mane,Urshifu,TRUE
+99,5,Amoonguss,Chien-Pao,FALSE
+100,1,Miraidon,Kingambit,FALSE
+100,4,Urshifu,Garchomp,TRUE
+100,7,Iron Hands,Flutter Mane,FALSE

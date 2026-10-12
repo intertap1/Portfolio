@@ -2,7 +2,7 @@ int rowCount;
 KOEvent[] events;
 
 void setup() {
-  size(1080, 960);
+  size(1900, 960);
   background(255);
 }
 
@@ -36,8 +36,8 @@ class KOEvent {
     myKO = allyKO;
   }
   void display() {
-    int monGap = order * 60;
-    int posX = ((width-80)/10) * match;
+    int monGap = order * 90;
+    int posX = (((width-80)/100) * match) + 40;
     int posY = ((0+80) + monGap);
     if (!myKO) {
       fill(10);
@@ -45,7 +45,8 @@ class KOEvent {
       fill(204, 102, 0);
     }
     noStroke();
-    circle(posX, posY, 30);
+    circle(posX, posY, 5);
+    circle(posX, (posY+60),5);
     drawArrow(posX, posY+30, myKO);
   }
   
@@ -107,8 +108,9 @@ void drawArrow(int posX, int posY, boolean AllyKO) {
 void mousePressed() {
   for (int i = 0; i <= rowCount; i++) {
     for (int j = 0; j <= 8; j++) {
-      if (dist(mouseX, mouseY, (i*100), (80+(60*j))) <= 15) {
+      if (dist(mouseX, mouseY, ((i*10)+40), (80+(80*j))) <= 10) {
         println("Match", i, "KO Order", j);
+        println(mouseX,mouseY);
         fill(255);
         rect(40,925,960,25);
         fill(0);
