@@ -1,66 +1,29 @@
 int rowCount;
+int totalPages = 4;
+int dataPage = 1;
 KOEvent[] events;
 
 void setup() {
   size(1900, 960);
   background(255);
+  setupTable();
+  setupData();
 }
 
 void draw() {
-  frameRate(1);
-  float bottom = height-40;
-  float top = 40;
-  float right = width-40;
-  float left = 40;
-  strokeWeight(6);
-  line(left, top, left, bottom);
-  line(left, bottom, right, bottom);
-  setupTable();
-  for (int i = 0; i < events.length; i++) {
-    events[i].display();
-  }
+  frameRate(60);
 };
 
-class KOEvent {
-  int match;
-  int order;
-  String attacker;
-  String defender;
-  boolean myKO;
-
-  KOEvent (int m, int o, String a, String d, boolean allyKO) {
-    match = m;
-    order = o;
-    attacker = a;
-    defender = d;
-    myKO = allyKO;
-  }
-  void display() {
-    int monGap = order * 90;
-    int posX = (((width-80)/100) * match) + 40;
-    int posY = ((0+80) + monGap);
-    if (!myKO) {
-      fill(10);
-    } else {
-      fill(204, 102, 0);
-    }
-    noStroke();
-    circle(posX, posY, 5);
-    circle(posX, (posY+60),5);
-    drawArrow(posX, posY+30, myKO);
-  }
-  
-}
 
 String displayBattleInfo(int match, int order) {
-    String text = "No KO found!";
-    for (int i = 0; i < events.length; i++) {
-      if (events[i].match == match && events[i].order == order) {
-        text = "Match: " + events[i].match + "   Order: " + events[i].order + "   Attacking Pokemon: " + events[i].attacker + "   Defending Pokemon:" + events[i].defender + "   Ally KO: " + events[i].myKO;
-      }
+  String text = "No KO found!";
+  for (int i = 0; i < events.length; i++) {
+    if (events[i].match == match && events[i].order == order) {
+      text = "Match: " + events[i].match + "   Order: " + events[i].order + "   Attacking Pokemon: " + events[i].attacker + "   Defending Pokemon:" + events[i].defender + "   Ally KO: " + events[i].myKO;
     }
-    return text;
   }
+  return text;
+}
 
 
 void setupTable() {
@@ -106,18 +69,112 @@ void drawArrow(int posX, int posY, boolean AllyKO) {
 }
 
 void mousePressed() {
-  for (int i = 0; i <= rowCount; i++) {
-    for (int j = 0; j <= 8; j++) {
-      if (dist(mouseX, mouseY, ((i*10)+40), (80+(80*j))) <= 10) {
-        println("Match", i, "KO Order", j);
-        println(mouseX,mouseY);
-        fill(255);
-        rect(40,925,960,25);
-        fill(0);
-        String battleInfo = displayBattleInfo(events[i].match, events[j-1].order);
-        textSize(15);
-        text(battleInfo,40,940);
-      }
-    }
+  // Convert the mouse position into the grid coordinates
+  int match = round((mouseX - 40) / 10.0);
+  int order = round((mouseY - 80) / 80.0);
+
+  if (mouseX < 40 || mouseY < 80) {
+    return;
   }
+
+  if (order < 0 || order > 8) {
+    return;
+  }
+
+  String battleInfo = displayBattleInfo(match, order);
+  println(mouseX, mouseY);
+  fill(255);
+  rect(40, 925, 960, 25);
+  fill(0);
+  textSize(15);
+  text(battleInfo, 40, 940);
+}
+
+void keyPressed() {
+  int oldPage = dataPage;
+  if (keyCode == RIGHT && dataPage < totalPages) {
+    dataPage++;
+  }
+
+  if (keyCode == LEFT && dataPage > 1) {
+    dataPage--;
+  }
+  if (dataPage != oldPage) {
+    setupData();
+  }
+}
+
+void setupData() {
+  background(255);
+  
+  switch (dataPage) {
+  case 1:
+    for (int m = 1; m <= 25; m++) {
+      int count = 0;
+
+      for (KOEvent event : events) {
+        if (event.match == m) {
+          count++;
+          event.display();
+        }
+      }
+
+      println("Match " + m + ": " + count + " events");
+    }
+    break;
+  case 2:
+    for (int m = 26; m <= 50; m++) {
+      int count = 0;
+
+      for (KOEvent event : events) {
+        if (event.match == m) {
+          count++;
+          event.display();
+        }
+      }
+
+      println("Match " + m + ": " + count + " events");
+    }
+    break;
+  case 3:
+    for (int m = 51; m <= 75; m++) {
+      int count = 0;
+
+      for (KOEvent event : events) {
+        if (event.match == m) {
+          count++;
+          event.display();
+        }
+      }
+
+      println("Match " + m + ": " + count + " events");
+    }
+    break;
+  case 4:
+    for (int m = 76; m <= 100; m++) {
+      int count = 0;
+
+      for (KOEvent event : events) {
+        if (event.match == m) {
+          count++;
+          event.display();
+        }
+      }
+
+      println("Match " + m + ": " + count + " events");
+    }
+    break;
+  }
+  setupGraph();
+}
+
+void setupGraph() {
+  float bottom = height-40;
+  float top = 40;
+  float right = width-40;
+  float left = 40;
+  stroke(0);
+  strokeWeight(6);
+  line(left, top, left, bottom);
+  line(left, bottom, right, bottom);
 }
