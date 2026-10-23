@@ -1,0 +1,243 @@
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // excercise7();
+        // excercise8();
+        // excercise9();
+        // excercise10();
+        // excercise11();
+        // excercise14();
+        // excercise15();
+        excercise16();
+    }
+    static void excercise7() {
+        Scanner intScanner = new Scanner(System.in);
+        System.out.println("Enter integer 1");
+        int intOne = intScanner.nextInt();
+        System.out.println("Enter integer 2");
+        int intTwo = intScanner.nextInt();
+        if (intOne > intTwo) {
+            IO.println("Integer 1 is greater than integer 2");
+        }
+        else if (intOne == intTwo) {
+            IO.println("Integer 1 is the same as integer 2");
+        }
+        else {
+            IO.println("Integer 1 is less than integer 2");
+        }
+    }
+    static void excercise8() {
+        Scanner intScanner = new Scanner(System.in);
+        System.out.println("Enter Age");
+        int age = intScanner.nextInt();
+        if (age > 120 || age < 0) {
+            IO.println("Invalid Age");
+        }
+        if (age >= 18 && age <= 120) {
+            IO.println("Adult");
+        }
+        else if (age < 18 && age >= 0){
+            IO.println("Underage");
+        }
+    }
+    static void excercise9() {
+        Scanner intScanner = new Scanner(System.in);
+        System.out.println("Enter Marks");
+        int marks = intScanner.nextInt();
+        if (marks > 100 || marks < 0) {
+            IO.println("Invalid Mark");
+        }
+        else if (marks >= 80) {
+            IO.println("A+");
+        }
+        else if (marks >= 70) {
+            IO.println("A");
+        }
+        else if (marks >= 60) {
+            IO.println("B");
+        }
+        else if (marks >= 50) {
+            IO.println("C");
+        }
+        else if (marks >= 40) {
+            IO.println("D");
+        }
+        else {
+            IO.println("F");
+        }
+    }
+    static void excercise10() {
+        Scanner intScanner = new Scanner(System.in);
+        System.out.println("Enter amount");
+        int givenPence = intScanner.nextInt();
+        int pounds = givenPence / 100;
+        int pence = givenPence % 100;
+        IO.println("£" + pounds + "." + pence);
+    }
+    static void excercise11() {
+        Scanner stringScanner = new Scanner(System.in);
+        System.out.println("Enter month");
+        String givenMonth = stringScanner.nextLine();
+        int month = 100;
+        switch(givenMonth.toUpperCase()) {
+            case "JANURARY":
+                month = 1;
+                break;
+            case "FEBURARY":
+                month = 2;
+                break;
+            case "MARCH":
+                month = 3;
+                break;
+            case "APRIL":
+                month = 4;
+                break;
+            case "MAY":
+                month = 5;
+                break;
+            case "JUNE":
+                month = 6;
+                break;
+            case "JULY":
+                month = 7;
+                break;
+            case "AUGUST":
+                month = 8;
+                break;
+            case "SEPTEMBER":
+                month = 9;
+                break;
+            case "OCTOBER":
+                month = 10;
+                break;
+            case "NOVEMBER":
+                month = 11;
+                break;
+            case "DECEMBER":
+                month = 12;
+                break;
+        }
+        if (month <= 12) {
+            IO.println(month);
+        }
+        else {
+            IO.println("Invalid Month given!");
+        }
+    }
+    static void excercise14() {
+        Scanner strScanner = new Scanner(System.in);
+        Scanner timeScanner = new Scanner(System.in);
+        Scanner priceScanner = new Scanner(System.in);
+        System.out.println("Enter total amount");
+        double givenAmount = priceScanner.nextDouble();
+        System.out.println("Enter (y/n) for being a student");
+        String studentStatus = strScanner.nextLine();
+        System.out.println("Enter the time");
+        double time = timeScanner.nextDouble();
+        if ((time >= 15.00 && time <= 16.00) || ((Objects.equals(studentStatus, "y") || Objects.equals(studentStatus, "Y")) && givenAmount >= 5.00)) {
+            IO.println("Meal Deal Applies");
+        }
+        else {
+            IO.println("Meal deal does not apply");
+        }
+    }
+    static void excercise15() {
+        double initalPrice = 4.00;
+        Scanner ageScanner = new Scanner(System.in);
+        Scanner dayScanner = new Scanner(System.in);
+        Scanner idScanner = new Scanner(System.in);
+        System.out.println("Enter age:");
+        int givenAge = ageScanner.nextInt();
+        System.out.println("Enter day (1-7):");
+        int givenDay = dayScanner.nextInt();
+        System.out.println("Do you have ID? (y/n):");
+        String idStatus = idScanner.nextLine();
+        if (givenAge < 16) {
+            initalPrice /= 2;
+        }
+        else if ((Objects.equals(idStatus, "y") || Objects.equals(idStatus, "Y"))) {
+            initalPrice *= 0.8;
+        }
+        if (givenDay == 3) {
+            initalPrice -= 0.50;
+        }
+        switch (givenDay) {
+            case 1:
+                System.out.printf("Monday: " + "£%.2f%n", initalPrice);
+                break;
+            case 2:
+                System.out.printf("Tuesday: " + "£%.2f%n", initalPrice);
+                break;
+            case 3:
+                System.out.printf("Wednesday: " + "£%.2f%n", initalPrice);
+                break;
+            case 4:
+                System.out.printf("Thursday: " + "£%.2f%n", initalPrice);
+                break;
+            case 5:
+                System.out.printf("Friday: " + "£%.2f%n", initalPrice);
+                break;
+            case 6:
+                System.out.printf("Saturday: " + "£%.2f%n", initalPrice);
+                break;
+            case 7:
+                System.out.printf("Sunday: " + "£%.2f%n", initalPrice);
+                break;
+        }
+    }
+    static void excercise16() {
+        Scanner monthScanner = new Scanner(System.in);
+        Scanner yearScanner = new Scanner(System.in);
+        System.out.println("Enter month:");
+        int givenMonth = monthScanner.nextInt();
+        System.out.println("Enter Year:");
+        int givenYear = yearScanner.nextInt();
+        switch (givenMonth) {
+            case 1:
+                IO.println("30 Days in Janurary, " + givenYear);
+                break;
+            case 2:
+                if ((givenYear % 4 == 0) || (givenYear % 100 != 0) && (givenYear % 400 == 0)) {
+                    IO.println("29 Days in Feburary, " + givenYear);
+                }
+                else {
+                    IO.println("28 Days in Feburary, " + givenYear);
+                }
+                break;
+            case 3:
+                IO.println("31 Days in March, " + givenYear);
+                break;
+            case 4:
+                IO.println("30 Days in April, " + givenYear);
+                break;
+            case 5:
+                IO.println("29 Days in March, " + givenYear);
+                break;
+            case 6:
+                IO.println("30 Days in June, " + givenYear);
+                break;
+            case 7:
+                IO.println("31 Days in July, " + givenYear);
+                break;
+            case 8:
+                IO.println("28 Days in August, " + givenYear);
+                break;
+            case 9:
+                IO.println("30 Days in September, " + givenYear);
+                break;
+            case 10:
+                IO.println("30 Days in October, " + givenYear);
+                break;
+            case 11:
+                IO.println("30 Days in November, " + givenYear);
+                break;
+            case 12:
+                IO.println("31 Days in December, " + givenYear);
+                break;
+            default:
+                System.out.println("Invalid Month");
+        }
+    }
+}
