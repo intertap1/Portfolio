@@ -24,3 +24,208 @@ false && (5!=4) = false
 
 Excercise 7:
 Index 3 out of bounds for length 3
+
+
+
+Session 2:
+
+Excercise 1:
+stock = 17 (20-3)
+stock = 34 (17*2)
+stock = 8 (34 / 4)
+stock = 3 (8 % 5)
+stock = 6 (3 + 3)
+
+Excercise 2:
+
+
+17 / 5 = 3 (int)
+17 % 5 = 2 (int)
+17.0 / 5 = 2.0 (double)
+5 % 17 = 5 (int)
+
+-7 % 3 = -1 (int)
+7 / 2 * 2 = 6 (int)
+7 / 2.0 = 3
+1 + 2 * 3 % 4 = 3 (int)
+
+int a = 7, b = 8;
+double avg = (a + b) / 2;
+System.out.println(avg);
+
+Answer: 7.0 is printed as both a and b are declared as integers.
+
+Fix: cast "a" and "b" to double or force "(double)" in the avg calculation
+
+Excercise 3:
+int n = 5;
+int a = n++;
+int b = n--;
+int c = --n;
+int d = ++n;
+System.out.println(a + " " + b + " " + c + " " + d + " " + n);
+
+Output: 5,6,4,5,5
+Note: if "x = ""++" then add 1 to the inital variable, x becomes the original value of the initial variable
+
+int orders = 10;
+orders = orders++;
+System.out.println(orders);
+Answer: 10
+
+Excercise 4:
+
+b = true
+c= false
+x = 4, y= 9
+
+a) x < y && c (= false)
+
+(b) !(x > y) || c (= true)
+(c) x == 4 || y / 0 > 1 (does this crash? why not?) (=true, does not crash as x==4 is already true so it does not need to continue to y/0)
+(d) b && !c && x % 2 == 0 (=true)
+(e) !b || (y >= 9 && x != 4) (= false)
+
+Excercise 5:
+
+1. Breakfast is served when hour is from 7 to 10 inclusive
+double time = ...
+if (time <= 10.00 || time >= 7.00)
+
+2. Free delivery if the total is over £20, or if a premium member spends at least £10
+double total = ...
+double delivery = ...
+boolean premiumMember = ...
+if (total > 20.00 || ((premiumMember) && total >= 10.00))
+
+3. The meal deal applies to students spending at least £5, and to everyone during happy hour
+  (15:00 to 16:59).
+
+  boolean student = ...
+  double total = ...
+  double time = ...
+  if ((time >= 15.00 || time <= 16.59) || ((student) && total >= 5.00))
+
+  4.A student writes if (7 <= age <= 12) for the children's menu. Why does Java reject it?
+    Rewrite it.
+
+    You need 2 comparisons as java cannot compare a variable to 2 values at once
+    if (age <= 12 && age >= 7)
+
+
+Excercise 6:
+// (a) free delivery
+if (total > 20); {
+freeDelivery = true;
+}
+// (b) member discount
+boolean isMember = false;
+if (isMember = true) {
+price = price * 0.9;
+}
+// (c) loyalty reward
+if (points >= 100)
+reward = "Free drink";
+points -= 100;
+
+(a) ";" after the if statement stops anything running after it
+
+(a) if (total > 20) {
+freeDelivery = true;
+}
+
+(b) isMember is set to false right before a condition checking its status which would mean members never get the reduction
+
+(b) if (isMember = true) {
+price *= 0.9;
+}
+
+(c) No {} to denote what is in the if statement
+
+(c) if (points >= 100) {
+reward = "Free drink";
+points -= 100;
+}
+
+Excercise 7:
+Write a program which asks the user to enter two integers and displays "greater" if the first one is
+greater than the second one and "smaller or equal" otherwise. Then change it to display three
+different messages: "greater", "equal" or "smaller
+
+Excercise 8:
+Write a program which asks the user to enter their age and displays "Adult" if it is 18 or over,
+"Underage" otherwise, and "Invalid age" if it is below 0 or above 120. Test it with every value in the
+table
+
+Excercise 9:
+Write a program which asks the user to enter a mark and displays the grade: A+ for 80 and above,
+A for 70+, B for 60+, C for 50+, D for 40+, F otherwise, and "Invalid mark" outside 0 to 100. Before
+you start: what goes wrong if you test mark >= 40 first?
+
+Excercise 10:
+Write a program which asks the user to enter a bill in pence (e.g. 437) and displays it as pounds
+and pence ("£4 and 37p"), using only / and %.
+
+Excercise 11:
+Write a program which asks the user to enter a month of the year (as a String) and displays the
+corresponding number (JANUARY=1, FEBRUARY=2, ...). Use a switch on the String, and display
+"Unknown month" for anything else. Hint: s.toUpperCase() lets the user type "january" too.
+
+Excercise 12:
+
+// Version 1
+  if (temp > 25) System.out.print("Iced ");
+  else if (temp > 15) System.out.print("Flat ");
+  else System.out.print("Hot");
+  // Version 2
+  if (temp > 25) System.out.print("Iced ");
+  if (temp > 15) System.out.print("Flat ");
+  else System.out.print("Hot");
+
+
+  Temp: 5 -> "Hot" -> "Hot"
+  Temp: 18 -> "Flat" -> "Flat"
+  Temp: 30 -> "Iced" -> "Iced" "Flat"
+
+  Version 1 is only different since temp > 15 only runs if temp > 25 is false
+
+  int x = -1, y = 5;
+  if (x > 0) {
+  if (y > 0) {
+  System.out.println("A"); }}
+  else {
+  System.out.println("B"); }
+
+  Excercise 13:
+  Give the final price (in pence) for each size: 'S', 'M', 'L' and 'X'. Is the missing break a bug or a
+  deliberate design? Rewrite it so a small costs 200, a medium 250 and a large 300
+
+  int price = 200;
+  switch (size) {
+  case 'S': price += 0;
+  break'
+  case 'M': price += 50;
+  break;
+  case 'L': price += 50;
+  break;
+  default: price = 0;
+  }
+
+  Excercise 14:
+
+  Write a program which asks whether the customer is a student (y/n), the order total in pounds and
+  the hour (0 to 23). Display "Meal deal applies" if the customer is a student spending at least £5, or
+  the hour is 15 or 16. Otherwise display "No meal deal".
+
+  Excercise 15:
+  A drink costs £4.00. Customers under 16 get 50% off; otherwise, customers with a student ID get
+  20% off (only the single best percentage discount applies). On Wednesday (day 3) everyone gets a
+  further £0.50 off. Ask for the age, student ID (y/n) and day (1 to 7), and display the price with
+  System.out.printf("£%.2f%n", price);. Extension: use a switch on the day to display its
+  name too, e.g. "Wednesday: £2.70"
+
+  Excercise 16:
+  Write a program which asks the user to enter a month (1 to 12) and a year, and displays the
+   number of days in that month. Use a switch with stacked cases, and a leap-year condition for
+   February: divisible by 4 but not by 100, unless also divisible by 400. Test with 2/2024 → 29,
+   2/2023 → 28, 2/1900 → 28, 2/2000 → 29, 4/2025 → 30, 13/2025 → "Invalid month"

@@ -6,6 +6,14 @@ class KOGraph {
 
     switch (page) {
     case 1:
+      {
+        for (int m = 1; m <= 100; m++) {
+          for (KOEvent event : events) {
+            event.displayHeatMap(m);
+          }
+        }
+      }
+    case 2:
       for (int m = 1; m <= 25; m++) {
         for (KOEvent event : events) {
           if (event.match == m) {
@@ -14,7 +22,7 @@ class KOGraph {
         }
       }
       break;
-    case 2:
+    case 3:
       for (int m = 26; m <= 50; m++) {
 
         for (KOEvent event : events) {
@@ -24,7 +32,7 @@ class KOGraph {
         }
       }
       break;
-    case 3:
+    case 4:
       for (int m = 51; m <= 75; m++) {
         for (KOEvent event : events) {
           if (event.match == m) {
@@ -33,7 +41,7 @@ class KOGraph {
         }
       }
       break;
-    case 4:
+    case 5:
       for (int m = 76; m <= 100; m++) {
         for (KOEvent event : events) {
           if (event.match == m) {
@@ -45,6 +53,7 @@ class KOGraph {
     }
     setupGraph();
     displayBattleInfo(battleInfo);
+    drawPageBoxes();
   }
   void setupGraph() {
     float bottom = height-40;
@@ -86,7 +95,7 @@ class KOGraph {
     println("Match sent over: " + match + " Order sent over " + order);
     String text = "No KO found!";
     for (int i = 0; i < events.length; i++) {
-      
+
       if (events[i].match == match && events[i].order == order) {
         text = "Match: " + events[i].match + "   Order: " + events[i].order + "   Attacking Pokemon: " + events[i].attacker + "   Defending Pokemon:" + events[i].defender + "   Ally KO: " + events[i].myKO;
         battleInfo = text;
@@ -99,7 +108,7 @@ class KOGraph {
         for (int y = 0; y <= 8; y++) {
           int circleXPos = floor((40 + (x - ((dataPage-1)*25)) * (width - 80) / 25));
           int circleYPos = floor(((80) + (y * 90)));
-          if (dist(circleXPos, circleYPos, floor(mouseX), floor(mouseY)) <= 15) {
+          if (dist(circleXPos, circleYPos, floor(mouseX), floor(mouseY)) <= 17) {
             int match = x;
             int order = y;
             graph.getBattleInfo(match, order);
@@ -109,7 +118,7 @@ class KOGraph {
     } else if (currentPage <= 4) {
       for (int x = ((dataPage-1)*25); x <= (25*dataPage); x++) {
         for (int y = 0; y <= 8; y++) {
-          int circleXPos = floor((120 + (x - ((dataPage-1)*25)) * (width - 80) / 25));
+          int circleXPos = floor((100 + (x - ((dataPage-1)*25)) * (width - 80) / 25));
           int circleYPos = floor(((80) + (y * 90)));
           if (dist(circleXPos, circleYPos, floor(mouseX), floor(mouseY)) <= 15) {
             int match = x+1;
@@ -119,5 +128,15 @@ class KOGraph {
         }
       }
     }
+  }
+  void drawPageBoxes() {
+    fill(255);
+    stroke(0);
+    strokeWeight(4);
+    rect(((width/2)-80), 0, 40, 40);
+    rect(((width/2)-40), 0, 40, 40);
+    rect(((width/2)), 0, 40, 40);
+    rect(((width/2)+40), 0, 40, 40);
+    rect(((width/2)+80), 0, 40, 40);
   }
 }
