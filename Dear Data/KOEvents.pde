@@ -15,7 +15,7 @@ class KOEvent {
     myKO = allyKO;
   }
   void display() {
-    int pageMatch = match - ((dataPage-1)*25);
+    int pageMatch = match - ((dataPage-2)*25);
     int monGap = order * 90;
     int spacing = (width - 80) / 25;
     int posY = ((0+80) + monGap);
@@ -38,17 +38,16 @@ class KOEvent {
       fill(10);
       circle(posX, (posY+60), 15);
       graph.drawArrow(posX, posY+30, myKO);
-    }
+    }  
+    text(match,(40 + (pageMatch) * spacing),940);
   }
   void displayHeatMap(int match) {
     float endY = map(calculateKOs(match), 0, 8, 920, 200);
-    int endX =40 + (width-80)/100 * (match - ((dataPage-1)*25));
+    int endX = 40 + (width-80)/100 * (match - ((dataPage-1)*25));
     float startY = map(calculateKOs(match-1), 0, 8, 920, 200);
     int startX = 40 + (width-80)/100 * ((match-1) - ((dataPage-1)*25));
     fill(10);
-    println(match);
-    setGradient(startX, startY, endY, endX);
-    
+    setGradient(startX, startY, endY, endX, match);
   }
   int calculateKOs(int m) {
     int KOAmount = 0;
@@ -59,15 +58,27 @@ class KOEvent {
     }
     return KOAmount;
   }
-  void setGradient (int startX, float startY, float endY, int endX) {
-    for (float y = startY; y <= height-40; y++) {
-      float step = map(y, height-40, 0, 0, 2);
-
-      int gradient = lerpColor(color(0, 70, 255), color(255, 0, 0), step);
-
+  void setGradient (int startX, float startY, float endY, int endX,int match) {
+    float parts = 100.0;
+    int gradient;
+    for (int i = 0; i <= parts; i++) {
+      float part1 = i / (float) parts;
+      float part2 = (i+1) / (float) parts;
+      // lerp() - Calculates a number between two numbers at a specific increment.
+      float posXOne = lerp(startX, endX, part1);
+      float posYOne = lerp(startY, endY, part1);
+      float posXTwo = lerp(startX, endX, part2);
+      float posYTwo = lerp(startY, endY, part2);
+      float amp = map(posYOne,40,1080,0.0,1.0);
+      // Self Note: Blue - (0,82,255), Red - (255,0,0), Orange - (255,128,0)
+      gradient = lerpColor(color(255,0,0),color(0,82,255),amp);
       stroke(gradient);
-      strokeWeight(3);
-      line(startX, y, endX, endY);
+      
+      
+      line(posXOne,posYOne,posXTwo,posYTwo);
+      // Gap of 18 on X
+      text(i,(40+(18*i)),940);
     }
+    
   }
 }

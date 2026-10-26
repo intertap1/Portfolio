@@ -1,5 +1,5 @@
 int rowCount;
-int totalPages = 4;
+int totalPages = 5;
 int dataPage = 1;
 KOEvent[] events;
 KOGraph graph;

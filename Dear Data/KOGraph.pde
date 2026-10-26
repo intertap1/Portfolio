@@ -3,16 +3,17 @@ class KOGraph {
   String battleInfo = "";
   void drawData(KOEvent[] events, int page) {
     background(255);
-
+    setupGraph();
     switch (page) {
     case 1:
-      {
-        for (int m = 1; m <= 100; m++) {
-          for (KOEvent event : events) {
+      for (int m = 1; m<=100; m++) {
+        for (KOEvent event : events) {
+          if (event.match == m) {
             event.displayHeatMap(m);
           }
         }
       }
+      break;
     case 2:
       for (int m = 1; m <= 25; m++) {
         for (KOEvent event : events) {
@@ -51,9 +52,7 @@ class KOGraph {
       }
       break;
     }
-    setupGraph();
     displayBattleInfo(battleInfo);
-    drawPageBoxes();
   }
   void setupGraph() {
     float bottom = height-40;
@@ -128,15 +127,5 @@ class KOGraph {
         }
       }
     }
-  }
-  void drawPageBoxes() {
-    fill(255);
-    stroke(0);
-    strokeWeight(4);
-    rect(((width/2)-80), 0, 40, 40);
-    rect(((width/2)-40), 0, 40, 40);
-    rect(((width/2)), 0, 40, 40);
-    rect(((width/2)+40), 0, 40, 40);
-    rect(((width/2)+80), 0, 40, 40);
   }
 }
