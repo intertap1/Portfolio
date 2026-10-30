@@ -1,163 +1,535 @@
 match,order,attacker,defender,myKO
-1,1,Garchomp,Flutter Mane,TRUE
-1,2,Iron Hands,Garchomp,FALSE
-1,3,Urshifu,Chien-Pao,TRUE
-1,4,Miraidon,Iron Hands,FALSE
-1,5,Miraidon,Iron Hands,TRUE
-1,6,Miraidon,Iron Hands,FALSE
-1,7,Miraidon,Iron Hands,TRUE
-1,8,Miraidon,Iron Hands,FALSE
-2,1,Chien-Pao,Amoonguss,TRUE
-2,2,Flutter Mane,Chien-Pao,FALSE
-3,2,Flutter Mane,Chien-Pao,FALSE
-4,2,Flutter Mane,Chien-Pao,FALSE
-5,2,Flutter Mane,Chien-Pao,FALSE
-6,2,Flutter Mane,Chien-Pao,FALSE
-7,2,Flutter Mane,Chien-Pao,FALSE
-8,2,Flutter Mane,Chien-Pao,FALSE
-9,2,Flutter Mane,Chien-Pao,FALSE
-10,2,Flutter Mane,Chien-Pao,FALSE
-11,1,Incineroar,Urshifu,TRUE
-11,2,Miraidon,Tornadus,TRUE
-11,6,Iron Hands,Ogerpon,FALSE
-12,1,Iron Hands,Miraidon,TRUE
-13,1,Amoonguss,Tornadus,FALSE
-13,5,Indeedee,Urshifu,FALSE
-14,5,Garchomp,Indeedee,TRUE
-14,7,Indeedee,Chien-Pao,FALSE
-15,4,Ogerpon,Flutter Mane,TRUE
-16,2,Landorus,Raging Bolt,FALSE
-16,5,Chien-Pao,Kingambit,FALSE
-17,1,Flutter Mane,Garchomp,FALSE
-17,4,Miraidon,Amoonguss,TRUE
-18,2,Urshifu,Iron Hands,FALSE
-18,7,Kingambit,Chien-Pao,FALSE
-19,3,Garchomp,Landorus,TRUE
-19,6,Tornadus,Flutter Mane,FALSE
-20,1,Chien-Pao,Incineroar,FALSE
-21,2,Miraidon,Urshifu,TRUE
-21,8,Amoonguss,Kingambit,FALSE
-22,4,Flutter Mane,Iron Hands,FALSE
-22,6,Ogerpon,Garchomp,TRUE
-23,1,Raging Bolt,Chien-Pao,FALSE
-24,3,Incineroar,Miraidon,TRUE
-24,5,Urshifu,Tornadus,FALSE
-25,2,Kingambit,Flutter Mane,FALSE
-25,7,Garchomp,Amoonguss,TRUE
-26,1,Iron Hands,Ogerpon,FALSE
-27,3,Landorus,Chien-Pao,TRUE
-27,6,Flutter Mane,Urshifu,FALSE
-28,2,Miraidon,Kingambit,TRUE
-28,4,Tornadus,Garchomp,FALSE
-29,1,Amoonguss,Incineroar,FALSE
-30,5,Urshifu,Flutter Mane,TRUE
-30,8,Chien-Pao,Miraidon,FALSE
-31,2,Garchomp,Ogerpon,TRUE
-31,7,Iron Hands,Tornadus,FALSE
-32,1,Flutter Mane,Kingambit,FALSE
-32,4,Raging Bolt,Urshifu,FALSE
-33,3,Miraidon,Chien-Pao,TRUE
-34,2,Incineroar,Amoonguss,FALSE
-34,6,Landorus,Flutter Mane,TRUE
-35,1,Urshifu,Garchomp,FALSE
-36,5,Kingambit,Miraidon,TRUE
-36,8,Ogerpon,Iron Hands,FALSE
-37,2,Chien-Pao,Tornadus,FALSE
-37,6,Flutter Mane,Amoonguss,FALSE
-38,1,Garchomp,Urshifu,TRUE
-39,4,Miraidon,Incineroar,FALSE
-39,7,Iron Hands,Kingambit,FALSE
-40,2,Flutter Mane,Ogerpon,TRUE
-40,5,Raging Bolt,Chien-Pao,FALSE
-41,1,Tornadus,Miraidon,FALSE
-42,3,Amoonguss,Garchomp,TRUE
-42,8,Urshifu,Kingambit,FALSE
-43,2,Chien-Pao,Flutter Mane,TRUE
-43,6,Incineroar,Iron Hands,FALSE
-44,1,Miraidon,Landorus,FALSE
-45,4,Garchomp,Tornadus,TRUE
-45,7,Kingambit,Amoonguss,FALSE
-46,2,Ogerpon,Urshifu,FALSE
-47,1,Iron Hands,Flutter Mane,TRUE
-47,3,Raging Bolt,Miraidon,FALSE
-48,5,Chien-Pao,Garchomp,FALSE
-49,2,Flutter Mane,Incineroar,TRUE
-49,6,Landorus,Ogerpon,FALSE
-50,1,Urshifu,Amoonguss,FALSE
-51,3,Miraidon,Iron Hands,TRUE
-51,5,Garchomp,Kingambit,FALSE
-52,2,Tornadus,Chien-Pao,FALSE
-53,1,Incineroar,Flutter Mane,TRUE
-53,7,Ogerpon,Landorus,FALSE
-54,4,Kingambit,Urshifu,FALSE
-55,1,Chien-Pao,Miraidon,TRUE
-55,6,Amoonguss,Garchomp,FALSE
-56,2,Flutter Mane,Tornadus,FALSE
-57,3,Iron Hands,Incineroar,TRUE
-57,8,Urshifu,Ogerpon,FALSE
-58,1,Landorus,Kingambit,FALSE
-59,2,Garchomp,Chien-Pao,TRUE
-59,5,Miraidon,Amoonguss,FALSE
-60,4,Raging Bolt,Flutter Mane,FALSE
-61,1,Urshifu,Tornadus,TRUE
-61,7,Incineroar,Kingambit,FALSE
-62,2,Ogerpon,Miraidon,FALSE
-63,3,Flutter Mane,Garchomp,TRUE
-63,6,Chien-Pao,Iron Hands,FALSE
-64,1,Amoonguss,Urshifu,FALSE
-65,5,Miraidon,Landorus,TRUE
-65,8,Kingambit,Flutter Mane,FALSE
-66,2,Garchomp,Ogerpon,FALSE
-67,1,Iron Hands,Chien-Pao,TRUE
-67,4,Tornadus,Incineroar,FALSE
-68,3,Urshifu,Miraidon,FALSE
-69,2,Flutter Mane,Amoonguss,TRUE
-69,6,Landorus,Kingambit,FALSE
-70,1,Chien-Pao,Garchomp,FALSE
-71,4,Miraidon,Urshifu,TRUE
-71,7,Ogerpon,Iron Hands,FALSE
-72,2,Incineroar,Tornadus,FALSE
-73,1,Garchomp,Flutter Mane,TRUE
-73,5,Kingambit,Chien-Pao,FALSE
-74,3,Amoonguss,Miraidon,FALSE
-75,2,Urshifu,Landorus,TRUE
-75,6,Flutter Mane,Iron Hands,FALSE
-76,1,Raging Bolt,Ogerpon,FALSE
-77,4,Chien-Pao,Incineroar,TRUE
-77,8,Miraidon,Kingambit,FALSE
-78,2,Tornadus,Garchomp,FALSE
-79,1,Iron Hands,Amoonguss,TRUE
-79,5,Urshifu,Flutter Mane,FALSE
-80,3,Ogerpon,Chien-Pao,FALSE
-81,2,Garchomp,Miraidon,TRUE
-81,7,Kingambit,Landorus,FALSE
-82,1,Flutter Mane,Urshifu,FALSE
-83,4,Incineroar,Iron Hands,TRUE
-83,6,Chien-Pao,Tornadus,FALSE
-84,2,Miraidon,Ogerpon,FALSE
-85,1,Landorus,Garchomp,TRUE
-85,5,Amoonguss,Kingambit,FALSE
-86,3,Urshifu,Chien-Pao,FALSE
-87,2,Iron Hands,Flutter Mane,TRUE
-87,8,Tornadus,Miraidon,FALSE
-88,1,Kingambit,Incineroar,FALSE
-89,4,Ogerpon,Garchomp,TRUE
-89,6,Flutter Mane,Landorus,FALSE
-90,2,Chien-Pao,Amoonguss,FALSE
-91,1,Miraidon,Urshifu,TRUE
-91,5,Garchomp,Iron Hands,FALSE
-92,3,Tornadus,Kingambit,FALSE
-93,2,Flutter Mane,Chien-Pao,TRUE
-93,7,Incineroar,Ogerpon,FALSE
-94,1,Urshifu,Miraidon,FALSE
-95,4,Landorus,Amoonguss,TRUE
-95,8,Iron Hands,Garchomp,FALSE
-96,2,Chien-Pao,Flutter Mane,FALSE
-97,1,Ogerpon,Kingambit,TRUE
-97,6,Miraidon,Tornadus,FALSE
-98,3,Garchomp,Incineroar,FALSE
-99,2,Flutter Mane,Urshifu,TRUE
-99,5,Amoonguss,Chien-Pao,FALSE
-100,1,Miraidon,Kingambit,FALSE
-100,4,Urshifu,Garchomp,TRUE
-100,7,Iron Hands,Flutter Mane,FALSE
+1,1,Rillaboom,Lycanroc,TRUE
+1,2,Sneasler,Tyranitar,TRUE
+2,1,Rillaboom,Grimmsnarl,TRUE
+2,2,Incineroar,Rillaboom,FALSE
+2,3,Archaludon,Kingambit,FALSE
+2,4,Garchomp,Sneasler,FALSE
+2,5,Lucario,Archaludon,TRUE
+2,6,Garchomp,Lucario,FALSE
+3,1,Rillaboom,Primarina,TRUE
+3,2,Raichu,Incineroar,FALSE
+3,3,Rillaboom,Raichu,TRUE
+3,4,N/A,Dragapult,TRUE
+3,5,Garchomp,Rillaboom,TRUE
+4,1,Kingambit,Sableye,TRUE
+4,2,Gengar,Lucario,FALSE
+4,3,Kingambit,Rillaboom,TRUE
+4,4,Gengar,Incineroar,FALSE
+4,5,Gengar,Kingambit,FALSE
+5,1,Annihilape,Incineroar,FALSE
+5,2,Sneasler,Pyroar,TRUE
+5,3,Annihilape,Garchomp,FALSE
+5,4,Kingambit,Annihilape,TRUE
+6,1,N/A,Incineroar,FALSE
+6,2,Garchomp,Volcarona,TRUE
+6,3,N/A,Sneasler,FALSE
+6,4,Kingambit,Raichu,TRUE
+6,5,Garchomp,Incineroar,TRUE
+6,6,Garchomp,Dragonite,TRUE
+7,1,Sneasler,Incineroar,TRUE
+7,2,Kingambit,Rillaboom,TRUE
+7,3,Chesnaught,Kingambit,FALSE
+7,4,Chesnaught,Incineroar,FALSE
+7,5,Sneasler,Indeedee,TRUE
+7,6,Chesnaught,Sneasler,FALSE
+7,7,Garchomp,Chesnaught,TRUE
+8,1,Floette,Lucario,FALSE
+8,2,Sneasler,Floette,TRUE
+8,3,Sneasler,Incineroar,FALSE
+8,4,Basculegion,Sneasler,FALSE
+9,1,Garchomp,Charizard,TRUE
+9,2,Incineroar,Grimmsnarl,TRUE
+9,3,Kingambit,Basculegion,TRUE
+9,4,Farigiraf,Incineroar,FALSE
+9,5,Garchomp,Farigiraf,TRUE
+10,1,N/A,Sneasler,FALSE
+10,2,Dragonite,Incineroar,FALSE
+10,3,Garchomp,Sneasler,TRUE
+10,4,Kingambit,Dragonite,TRUE
+10,5,Kingambit,Garchomp,TRUE
+10,6,Incineroar,Kingambit,FALSE
+11,1,N/A,Incineroar,FALSE
+11,2,Rillaboom,Rillaboom,FALSE
+11,3,Garchomp,Rillaboom,TRUE
+11,4,Garchomp,Steelix,TRUE
+11,5,Sneasler,Garchomp,TRUE
+12,1,Rillaboom,Pelipper,TRUE
+12,2,Swampert,Sneasler,FALSE
+12,3,Rillaboom,Swampert,TRUE
+12,4,N/A,Rillaboom,FALSE
+12,5,Lucario,Archaludon,TRUE
+12,6,Kingambit,Tsareena,FALSE
+13,1,Volcarona,Rillaboom,FALSE
+13,2,Kingambit,Volcarona,TRUE
+13,3,Floette,Kingambit,FALSE
+13,4,Sneasler,Floette,TRUE
+13,5,Sneasler,Lucario,FALSE
+13,6,Rillaboom,Sneasler,FALSE
+14,1,Sneasler,Kommo-o,TRUE
+14,2,Sneasler,Gardevoir,TRUE
+15,1,N/A,Rillaboom,FALSE
+15,2,Salamence,Sneasler,FALSE
+15,3,Sneasler,Incineroar,FALSE
+16,1,N/A,Rillaboom,FALSE
+16,2,Incineroar,Clefable,TRUE
+16,3,Empoleon,Garchomp,FALSE
+16,4,Empoleon,Incineroar,FALSE
+16,5,Sneasler,Empoleon,TRUE
+16,6,Sneasler,Starraptor,TRUE
+16,7,Volcarona,Sneasler,FALSE
+17,1,Incineroar,Vivillion,TRUE
+17,2,Sylveon,Incineroar,FALSE
+17,3,N/A,Kingambit,FALSE
+17,4,N/A,Infernape,TRUE
+17,5,Sneasler,Sylveon,TRUE
+17,6,Lucario,Baxcalibur,TRUE
+18,1,Kingambit,Gengar,TRUE
+18,2,Gengar,Kingambit,FALSE
+18,3,Rillaboom,Politoed,TRUE
+19,1,Garchomp,Kommo-o,TRUE
+19,2,Garchomp,Charizard,TRUE
+20,1,Garchomp,Aerodactyl,TRUE
+20,2,Incineroar,Indeedee,TRUE
+20,3,Sneasler,Incineroar,FALSE
+20,4,Typhlosion,Garchomp,FALSE
+20,5,Typhlosion,Sneasler,FALSE
+20,6,Typhlosion,Kingambit,FALSE
+21,1,Indeedee,Sneasler,FALSE
+21,2,Sneasler,Kingambit,FALSE
+21,3,N/A,Incineroar,FALSE
+21,4,Sneasler,Garchomp,FALSE
+22,1,Rillaboom,Sneasler,TRUE
+22,2,Rillaboom,Banette,TRUE
+22,3,Rillaboom,Politoed,TRUE
+22,4,Corviknight,Kingambit,FALSE
+22,5,Lucario,Corviknight,TRUE
+23,1,Garchomp,Torkoal,TRUE
+23,2,Garchomp,Incineroar,TRUE
+23,3,Garchomp,Sneasler,TRUE
+23,4,Garchomp,Farigiraf,TRUE
+24,1,Rillaboom,Milotic,TRUE
+24,2,Rillaboom,Sneasler,TRUE
+25,1,Sneasler,Sirfetch'd,TRUE
+25,2,N/A,Starraptor,TRUE
+25,3,Kingambit,Meowstic,TRUE
+25,4,N/A,Kingambit,FALSE
+25,5,Incineroar,Gholdengo,TRUE
+26,1,Rillaboom,Indeedee,TRUE
+26,2,N/A,Rillaboom,FALSE
+26,3,Sneasler,Sneasler,TRUE
+26,4,Rotom-Heat,Sneasler,FALSE
+26,5,Garchomp,Sceptile,TRUE
+26,6,Incineroar,Rotom-Heat,TRUE
+27,1,Salamence,Incineroar,FALSE
+27,2,Salamence,Sneasler,FALSE
+27,3,Rillaboom,Sneasler,TRUE
+27,4,Salamence,Rillaboom,FALSE
+27,5,Floette,Garchomp,FALSE
+28,1,Rillaboom,Sneasler,TRUE
+28,2,Blaziken,Sneasler,FALSE
+28,3,Garchomp,Baxcalibur,TRUE
+28,4,Sinistcha,Garchomp,FALSE
+28,5,Blaziken,Rillaboom,FALSE
+28,6,Incineroar,Sinistcha,TRUE
+28,7,N/A,Incineroar,FALSE
+29,1,Malamar,Sneasler,FALSE
+29,2,Rillaboom,Malamar,TRUE
+29,3,Rillaboom,Grimmsnarl,TRUE
+29,4,Rillaboom,Ninetales-Alola,TRUE
+29,5,N/A,Rillaboom,FALSE
+30,1,Charizard,Sneasler,FALSE
+30,2,Kingambit,Garchomp,TRUE
+30,3,Venusaur,Incineroar,FALSE
+30,4,Grimmsnarl,Garchomp,FALSE
+30,5,Kingambit,Charizard,TRUE
+30,6,Kingambit,Venusaur,TRUE
+30,7,Grimmsnarl,Kingambit,FALSE
+31,1,Rillaboom,Milotic,TRUE
+31,2,Kingambit,Delphox,TRUE
+31,3,Overqwil,Rillaboom,FALSE
+31,4,Kingambit,Overqwil,TRUE
+31,5,Kingambit,Ninetales-Alola,TRUE
+32,1,Rillaboom,Sneasler,TRUE
+32,2,Rillaboom,Indeedee,TRUE
+32,3,Baxcalibur,Sneasler,FALSE
+32,4,Incineroar,Corviknight,TRUE
+32,5,Baxcalibur,Incineroar,FALSE
+32,6,Baxcalibur,Rillaboom,FALSE
+32,7,Garchomp,Baxcalibur,TRUE
+33,1,Rillaboom,Pelipper,TRUE
+33,2,Sneasler,Aggron,TRUE
+33,3,N/A,Sneasler,FALSE
+33,4,Rillaboom,Gardevoir,TRUE
+33,5,Sceptile,Incineroar,FALSE
+33,6,Sceptile,Lucario,FALSE
+33,7,Sceptile,Rillaboom,FALSE
+34,1,Sableye,Garchomp,FALSE
+34,2,Sneasler,Charizard,TRUE
+34,3,Rillaboom,Sableye,TRUE
+34,4,Sylveon,Sneasler,FALSE
+35,1,Incineroar,Gourgeist,TRUE
+35,2,Incineroar,Basculegion,TRUE
+35,3,Tyranitar,Incineroar,FALSE
+35,4,Sneasler,Tyranitar,TRUE
+35,5,N/A,Rillaboom,FALSE
+35,6,Pelipper,Sneasler,FALSE
+35,7,Garchomp,Pelipper,TRUE
+36,1,Sneasler,Tyranitar,TRUE
+36,2,Incineroar,Gholdengo,TRUE
+36,3,Incineroar,Sneasler,FALSE
+36,4,Garchomp,Salamence,TRUE
+36,5,Garchomp,Incineroar,TRUE
+37,1,Gardevoir,Incineroar,FALSE
+37,2,N/A,Indeedee,TRUE
+37,3,Sneasler,Sneasler,FALSE
+37,4,Gardevoir,Garchomp,FALSE
+37,5,Kingambit,Gardevoir,TRUE
+37,6,Sneasler,Kingambit,FALSE
+38,1,Incineroar,Persian,TRUE
+38,2,Sneasler,Barbaracle,TRUE
+38,3,Lycanroc,Sneasler,FALSE
+38,4,Kingambit,Sandaconda,TRUE
+38,5,Kingambit,Lycanroc,TRUE
+39,1,Pelipper,Rillaboom,FALSE
+39,2,Garchomp,Salamence,TRUE
+39,3,Sneasler,Pelipper,TRUE
+39,4,Sneasler,Rillaboom,TRUE
+39,5,Basculegion,Garchomp,FALSE
+39,6,Basculegion,Sneasler,FALSE
+39,7,Incineroar,Basculegion,TRUE
+40,1,Rillaboom,Persian,TRUE
+40,2,Kommo-o,Garchomp,FALSE
+40,3,Kommo-o,Incineroar,FALSE
+40,4,Sneasler,Scovillain,TRUE
+40,5,N/A,Quaquaval,TRUE
+40,6,Kommo-o,Sneasler,FALSE
+40,7,Kommo-o,Rillaboom,FALSE
+41,1,Garchomp,Garchomp,TRUE
+41,2,Delphox,Kingambit,FALSE
+41,3,Delphox,Garchomp,FALSE
+41,4,Incineroar,Torkoal,TRUE
+41,5,Delphox,Sneasler,FALSE
+41,6,Incineroar,Delphox,TRUE
+41,7,Incineroar,Indeedee,TRUE
+42,1,Incineroar,Farigiraf,TRUE
+42,2,Golisopod,Rillaboom,FALSE
+42,3,Politoed,Garchomp,FALSE
+42,4,Golisopod,Incineroar,FALSE
+42,5,Sneasler,Incineroar,TRUE
+42,6,Politoed,Sneasler,FALSE
+43,1,Lucario,Incineroar,FALSE
+43,2,Sneasler,Lucario,TRUE
+43,3,Incineroar,Sneasler,FALSE
+43,4,Garchomp,Tauros,TRUE
+43,5,Rillaboom,Ditto,TRUE
+43,6,Incineroar,Garchomp,FALSE
+43,7,Rillaboom,Incineroar,TRUE
+44,1,Rillaboom,Hatterene,TRUE
+44,2,Camerupt,Rillaboom,FALSE
+44,3,Camerupt,Kingambit,FALSE
+44,4,Camerupt,Incineroar,FALSE
+44,5,Camerupt,Lucario,FALSE
+45,1,Rillaboom,Milotic,TRUE
+45,2,Incineroar,Rotom-Heat,TRUE
+45,3,Altaria,Sneasler,FALSE
+45,4,Garchomp,Garganacl,TRUE
+45,5,Altaria,Garchomp,FALSE
+45,6,Rillaboom,Altaria,TRUE
+46,1,Sneasler,Indeedee,TRUE
+47,1,Sneasler,Rillaboom,TRUE
+47,2,Sirfetch'd,Garchomp,FALSE
+47,3,Volcarona,Sneasler,FALSE
+47,4,N/A,Farfetch'd,TRUE
+47,5,Sirfetch'd,Incineroar,FALSE
+47,6,N/A,Sirfetch'd,TRUE
+47,7,Volcarona,Kingambit,FALSE
+48,1,Salamence,Sneasler,FALSE
+48,2,Garchomp,Salamence,TRUE
+48,3,Garchomp,Rillaboom,TRUE
+48,4,Arcanine,Incineroar,FALSE
+48,5,Garchomp,Sneasler,TRUE
+48,6,Garchomp,Arcanine,TRUE
+49,1,Sneasler,Rillaboom,TRUE
+49,2,Golisopod,Sneasler,FALSE
+49,3,Archaludon,Kingambit,FALSE
+49,4,Lucario,Archaludon,TRUE
+49,5,Rillaboom,Politoed,TRUE
+49,6,Lucario,Golisopod,TRUE
+50,1,N/A,Incineroar,FALSE
+50,2,Sneasler,Arcanine,TRUE
+50,3,Garchomp,Sneasler,FALSE
+50,4,Rillaboom,Sableye,TRUE
+50,5,N/A,Rillaboom,FALSE
+51,1,Rillaboom,Sneasler,TRUE
+51,2,N/A,Rillaboom,FALSE
+51,3,Sneasler,Pelipper,TRUE
+51,4,Golisopod,Sneasler,FALSE
+51,5,Lucario,Archaludon,TRUE
+52,1,Sneasler,Farfetch'd,TRUE
+52,2,Garchomp,Rillaboom,TRUE
+52,3,Garchomp,Garchomp,TRUE
+52,4,Volcarona,Sneasler,FALSE
+52,5,Incineroar,Volcarona,TRUE
+53,1,Floette,Incineroar,FALSE
+53,2,Rillaboom,Sneasler,TRUE
+53,3,Incineroar,Rillaboom,FALSE
+53,4,Lucario,Incineroar,TRUE
+53,5,Lucario,Floette,TRUE
+53,6,Lucario,Rillaboom,TRUE
+54,1,Volcarona,Sneasler,FALSE
+54,2,Incineroar,Rillaboom,TRUE
+54,3,Incineroar,Volcarona,TRUE
+54,4,Sneasler,Incineroar,FALSE
+54,5,Garchomp,Sneasler,TRUE
+54,6,Rillaboom,Raichu,TRUE
+55,1,Rotom-Heat,Rillaboom,FALSE
+55,2,Sneasler,Rotom-Heat,TRUE
+55,3,Garchomp,Indeedee,TRUE
+55,4,Gallade,Sneasler,FALSE
+55,5,Garchomp,Gallade,TRUE
+56,1,Kingambit,Farigiraf,TRUE
+56,2,Kingambit,Politoed,TRUE
+56,3,Sneasler,Charizard,TRUE
+56,4,Kingambit,Golisopod,TRUE
+57,1,Sneasler,Blastoise,TRUE
+57,2,Pawmot,Rillaboom,FALSE
+57,3,Indeedee,Sneasler,FALSE
+57,4,Incineroar,Indeedee,TRUE
+57,5,Incineroar,Pawmot,TRUE
+57,6,Blastoise,Incineroar,FALSE
+58,1,Lucario,Incineroar,TRUE
+58,2,Dragalge,Rillaboom,FALSE
+58,3,Sneasler,Golisopod,TRUE
+58,4,Dragalge,Sneasler,FALSE
+58,5,Lucario,Hatterene,TRUE
+58,6,Dragalge,Lucario,FALSE
+58,7,Incineroar,Dragalge,TRUE
+59,1,Greninja,Sneasler,FALSE
+59,2,Garchomp,Torkoal,TRUE
+59,3,Greninja,Garchomp,FALSE
+59,4,Kingambit,Greninja,TRUE
+59,5,Blaziken,Kingambit,FALSE
+59,6,Incineroar,Blaziken,TRUE
+60,1,Incineroar,Indeedee,TRUE
+60,2,Rillaboom,Sneasler,TRUE
+60,3,Rillaboom,Excadrill,TRUE
+60,4,Garchomp,Incineroar,FALSE
+60,5,N/A,Rillaboom,FALSE
+60,6,Garchomp,Garchomp,FALSE
+60,7,Sneasler,Garchomp,TRUE
+61,1,Annihilape,Incineroar,FALSE
+61,2,Annihilape,Lucario,FALSE
+61,3,Kingambit,Annihilape,TRUE
+61,4,N/A,Sneasler,FALSE
+61,5,Kingambit,Pelipper,TRUE
+61,6,Golisopod,Kingambit,FALSE
+62,1,Hatterene,Sneasler,FALSE
+62,2,Rillaboom,Indeedee,TRUE
+62,3,Torkoal,Rillaboom,FALSE
+62,4,Garchomp,Torkoal,TRUE
+62,5,Hatterene,Incineroar,FALSE
+62,6,Hatterene,Garchomp,FALSE
+63,1,Sneasler,Sneasler,FALSE
+63,2,Rillaboom,Sneasler,TRUE
+63,3,Garchomp,Archaludon,TRUE
+63,4,N/A,Rillaboom,FALSE
+63,5,Incineroar,Pelipper,TRUE
+63,6,Incineroar,Raichu,TRUE
+64,1,Thievul,Sneasler,FALSE
+64,2,Incineroar,Indeedee,TRUE
+64,3,Thievul,Rillaboom,FALSE
+64,4,Incineroar,Hawlucha,TRUE
+64,5,Raichu,Incineroar,FALSE
+64,6,Thievul,Garchomp,FALSE
+65,1,Sneasler,Incineroar,FALSE
+65,2,Sneasler,Sneasler,TRUE
+65,3,Garchomp,Pelipper,TRUE
+65,4,Garchomp,Raichu,TRUE
+66,1,Incineroar,Sneasler,TRUE
+66,2,N/A,Incineroar,TRUE
+66,3,N/A,Garchomp,FALSE
+66,4,Metagross,Rillaboom,FALSE
+66,5,N/A,Incineroar,FALSE
+66,6,Metagross,Sneasler,FALSE
+67,1,Sneasler,Salamence,TRUE
+67,2,Garchomp,Sneasler,FALSE
+67,3,Garchomp,Garchomp,TRUE
+67,4,Garchomp,Pelipper,TRUE
+68,1,Rillaboom,Gallade,TRUE
+68,2,Glaceon,Rillaboom,FALSE
+68,3,Galceon,Sneasler,FALSE
+68,4,N/A,Incineroar,FALSE
+68,5,Garchomp,Ninetales-Alola,TRUE
+68,6,Garchomp,Glimmora,TRUE
+68,7,Glaceon,Garchomp,FALSE
+69,1,Farigiraf,Sneasler,FALSE
+69,2,Garchomp,Garchomp,FALSE
+69,3,Charizard,Rillaboom,FALSE
+69,4,Incineroar,Charizard,TRUE
+69,5,Incineroar,Venusaur,TRUE
+70,1,Charizard,Rillaboom,FALSE
+70,2,Incineroar,Whimsicott,TRUE
+70,3,Charizard,Sneasler,FALSE
+70,4,Garchomp,Rotom-Heat,TRUE
+70,5,Garchomp,Charizard,TRUE
+70,6,Garchomp,Incineroar,FALSE
+70,7,Garchomp,Garchomp,FALSE
+71,1,Garchomp,Raichu,TRUE
+71,2,Garchomp,Pelipper,TRUE
+71,3,Archaludon,Rillaboom,FALSE
+71,4,Farigiraf,Garchomp,FALSE
+71,5,Archaludon,Sneasler,FALSE
+71,6,Incineroar,Farigiraf,TRUE
+71,7,Archaludon,Incineroar,FALSE
+72,1,Garchomp,Basculegion,TRUE
+72,2,Archaludon,Garchomp,FALSE
+72,3,Rillaboom,Raichu,TRUE
+72,4,N/A,Rillaboom,FALSE
+72,5,Sneasler,Archaludon,TRUE
+72,6,Pelipper,Sneasler,FALSE
+72,7,Pelipper,Incineroar,FALSE
+73,1,Golurk,Sneasler,FALSE
+73,2,Kingambit,Golurk,TRUE
+73,3,Torkoal,Incineroar,FALSE
+73,4,Kingambit,Farigiraf,TRUE
+73,5,N/A,Kingambit,FALSE
+73,6,Garchomp,Torkoal,TRUE
+73,7,Primarina,Garchomp,FALSE
+74,1,Rillaboom,Milotic,TRUE
+74,2,Froslass,Rillaboom,FALSE
+74,3,Froslass,Sneasler,FALSE
+74,4,Incineroar,Garchomp,FALSE
+74,5,Aerodactyl,Incineroar,FALSE
+75,1,Sneasler,Kingambit,TRUE
+75,2,Garchomp,Basculegion,TRUE
+75,3,Salamence,Sneasler,FALSE
+75,4,Garchomp,Sneasler,TRUE
+75,5,Incineroar,Salamence,TRUE
+76,1,Rillaboom,Pelipper,TRUE
+76,2,Sneasler,Archaludon,TRUE
+76,3,Golisopod,Sneasler,FALSE
+76,4,Sneasler,Garchomp,TRUE
+76,5,Golisopod,Sneasler,FALSE
+76,6,Kingambit,Golisopod,TRUE
+77,1,Charizard,Sneasler,FALSE
+77,2,Incineroar,Venusaur,TRUE
+77,3,Charizard,Rillaboom,FALSE
+77,4,Garchomp,Charizard,TRUE
+77,5,N/A,Garchomp,FALSE
+77,6,Incineroar,Sneasler,TRUE
+77,7,Kingambit,Incineroar,FALSE
+78,1,Rillaboom,Kangaskhan,TRUE
+78,2,Drampa,Rillaboom,FALSE
+78,3,Drampa,Kingambit,FALSE
+79,1,Sneasler,Dragonite,TRUE
+79,2,Rillaboom,Sneasler,FALSE
+79,3,Incineroar,Raichu,TRUE
+80,1,Incineroar,Sinistcha,TRUE
+80,2,Incineroar,Chandelure,TRUE
+80,3,Gengar,Incineroar,FALSE
+80,4,Lucario,Gengar,TRUE
+80,5,Kingambit,Sableye,TRUE
+81,1,Rillaboom,Milotic,TRUE
+81,2,Excadrill,Incineroar,FALSE
+81,3,Farigiraf,Rillaboom,FALSE
+81,4,Garchomp,Farigiraf,TRUE
+81,5,Sneasler,Excadrill,TRUE
+81,6,Sneasler,Sylveon,TRUE
+82,1,N/A,Rillaboom,FALSE
+82,2,Kommo-o,Incineroar,FALSE
+82,3,Sneasler,Indeedee,TRUE
+82,4,Sneasler,Gardevoir,TRUE
+82,5,Sneasler,Kingambit,TRUE
+83,1,Sneasler,Whimsicott,TRUE
+83,2,Volcarona,Garchomp,FALSE
+83,3,Volcarona,Sneasler,FALSE
+83,4,Volcarona,Incineroar,FALSE
+83,5,Volcarona,Rillaboom,FALSE
+84,1,Raichu,Sneasler,FALSE
+84,2,Garchomp,Rillaboom,TRUE
+84,3,Raichu,Incineroar,FALSE
+84,4,Rillaboom,Primarina,TRUE
+84,5,Sneasler,Rillaboom,FALSE
+84,6,Sneasler,Garchomp,FALSE
+85,1,Garchomp,Volcarona,TRUE
+85,2,Sneasler,Incineroar,TRUE
+85,3,Raichu,Sneasler,FALSE
+85,4,Garchomp,Rillaboom,TRUE
+85,5,Raichu,Incineroar,FALSE
+85,6,Rillaboom,Raichu,TRUE
+86,1,Pelipper,Sneasler,FALSE
+86,2,Garchomp,Pelipper,TRUE
+86,3,Incineroar,Garchomp,TRUE
+86,4,Archaludon,Garchomp,FALSE
+86,5,Incineroar,Archaludon,TRUE
+86,6,Rillaboom,Incineroar,FALSE
+86,7,Rillaboom,Rillaboom,FALSE
+87,1,Pelipper,Sneasler,FALSE
+87,2,Garchomp,Pelipper,TRUE
+87,3,Incineroar,Garchomp,TRUE
+87,4,Archaludon,Garchomp,FALSE
+87,5,Incineroar,Archaludon,TRUE
+87,6,Rillaboom,Incineroar,FALSE
+87,7,Rillaboom,Rillaboom,FALSE
+88,1,Garchomp,Incineroar,FALSE
+88,2,Torkoal,Rillaboom,FALSE
+88,3,Sneasler,Indeedee,TRUE
+88,4,Torkoal,Garchomp,FALSE
+88,5,Torkoal,Sneasler,FALSE
+89,1,Sneasler,Blaziken,TRUE
+89,2,Lucario,Ninetales-Alola,TRUE
+90,1,Lopunny,Garchomp,FALSE
+90,2,Sneasler,Lopunny,TRUE
+90,3,Gliscor,Sneasler,FALSE
+90,4,Inteleon,Incineroar,FALSE
+90,5,Gliscor,Rillaboom,FALSE
+91,1,Garchomp,Garchomp,FALSE
+91,2,Sneasler,Garchomp,TRUE
+91,3,Incineroar,Whimsicott,TRUE
+91,4,Sneasler,Rillaboom,TRUE
+91,5,Gholdengo,Sneasler,FALSE
+91,6,N/A,Gholdengo,TRUE
+92,1,Dragonite,Sneasler,FALSE
+92,2,Garchomp,Dragonite,TRUE
+92,3,Blaziken,Incineroar,FALSE
+92,4,Rillaboom,Blaziken,TRUE
+92,5,Garchomp,Sinistcha,TRUE
+92,6,Rillaboom,Tyranitar,TRUE
+93,1,Garchomp,Lucario,TRUE
+93,2,Garchomp,Whimsicott,TRUE
+93,3,Incineroar,Gallade,TRUE
+94,1,Sneasler,Incineroar,FALSE
+94,2,Rillaboom,Sneasler,TRUE
+94,3,N/A,Rillaboom,FALSE
+94,4,Sneasler,Indeedee,TRUE
+94,5,Garchomp,Garchomp,TRUE
+95,1,Basculegion,Sneasler,FALSE
+95,2,Garchomp,Basculegion,TRUE
+95,3,Rillaboom,Sneasler,TRUE
+95,4,Metagross,Garchomp,FALSE
+95,5,Incineroar,Metagross,TRUE
+96,1,Garchomp,Rillaboom,TRUE
+96,2,Annihilape,Garchomp,FALSE
+96,3,Annihilape,Incineroar,FALSE
+97,1,Garchomp,Pelipper,TRUE
+97,2,Garchomp,Sneasler,TRUE
+97,3,Golisopod,Garchomp,FALSE
+97,4,Sneasler,Delphox,TRUE
+97,5,Rillaboom,Golisopod,TRUE
+98,1,Sneasler,Farigiraf,TRUE
+98,2,Sneasler,Rillaboom,TRUE
+98,3,Feraligatr,Garchomp,FALSE
+98,4,Feraligatr,Sneasler,FALSE
+98,5,Feraligatr,Rillaboom,FALSE
+99,1,Sneasler,Archaludon,TRUE
+99,2,Sneasler,Rillaboom,TRUE
+99,3,Incineroar,Pelipper,TRUE
+99,4,Garchomp,Sneasler,FALSE
+99,5,Rillaboom,Garchomp,TRUE
+100,1,Pelipper,Garchomp,FALSE
+100,2,Incineroar,Pelipper,TRUE
+100,3,Dragonite,Rillaboom,FALSE
+100,4,Incineroar,Blastoise,TRUE
+100,5,Sneasler,Archaludon,TRUE
+100,6,Sneasler,Dragonite,TRUE

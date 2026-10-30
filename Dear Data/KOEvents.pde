@@ -31,6 +31,7 @@ class KOEvent {
       fill(204, 102, 0);
       circle(posX, (posY+60), 15);
       graph.drawArrow(posX, posY+30, myKO);
+      fill(10);
     } else {
       fill(204, 102, 0);
       noStroke();
@@ -76,8 +77,11 @@ class KOEvent {
       
       
       line(posXOne,posYOne,posXTwo,posYTwo);
-      // Gap of 18 on X
+      // Gap of 18 on X, Gap of 75 on Y
       text(i,(40+(18*i)),940);
+      if (i <= 8) {
+        text(i, 20,(920 - (i*75)));
+      }
     }
     
   }
