@@ -91,7 +91,6 @@ class KOGraph {
     text(battleInfo, 40, 940);
   }
   void getBattleInfo(int match, int order) {
-    println("Match sent over: " + match + " Order sent over " + order);
     String text = "No KO found!";
     for (int i = 0; i < events.length; i++) {
 

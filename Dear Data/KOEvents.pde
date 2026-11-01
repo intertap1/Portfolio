@@ -48,7 +48,7 @@ class KOEvent {
     float startY = map(calculateKOs(match-1), 0, 8, 920, 200);
     int startX = 40 + (width-80)/100 * ((match-1) - ((dataPage-1)*25));
     fill(10);
-    setGradient(startX, startY, endY, endX, match);
+    setGradient(startX, startY, endY, endX);
   }
   int calculateKOs(int m) {
     int KOAmount = 0;
@@ -59,10 +59,12 @@ class KOEvent {
     }
     return KOAmount;
   }
-  void setGradient (int startX, float startY, float endY, int endX,int match) {
+  // Base Idea: https://processing.org/examples/lineargradient.html
+  void setGradient (int startX, float startY, float endY, int endX) {
     float parts = 100.0;
     int gradient;
     for (int i = 0; i <= parts; i++) {
+      // If i is set to float in the "for" statement, axis mess up
       float part1 = i / (float) parts;
       float part2 = (i+1) / (float) parts;
       // lerp() - Calculates a number between two numbers at a specific increment.
@@ -74,7 +76,6 @@ class KOEvent {
       // Self Note: Blue - (0,82,255), Red - (255,0,0), Orange - (255,128,0)
       gradient = lerpColor(color(255,0,0),color(0,82,255),amp);
       stroke(gradient);
-      
       
       line(posXOne,posYOne,posXTwo,posYTwo);
       // Gap of 18 on X, Gap of 75 on Y

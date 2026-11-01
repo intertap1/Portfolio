@@ -3,6 +3,7 @@ class KOData {
   KOData() {
     loadData();
   }
+  // Reference: https://processing.org/examples/loadsavetable.html
   void loadData() {
     Table data = loadTable("Data.csv", "header");
     events = new KOEvent[data.getRowCount()];
