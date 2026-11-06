@@ -19,6 +19,7 @@ class KOEvent {
     int monGap = order * 90;
     int spacing = (width - 80) / 25;
     int posY = ((0+80) + monGap);
+    graph.setupGraph();
     if (dataPage == 1) {
       posX = 40 + (pageMatch) * spacing;
     } else {
@@ -30,7 +31,6 @@ class KOEvent {
       circle(posX, posY, 15);
       fill(204, 102, 0);
       circle(posX, (posY+60), 15);
-      graph.drawArrow(posX, posY+30, myKO);
       fill(10);
     } else {
       fill(204, 102, 0);
@@ -38,14 +38,15 @@ class KOEvent {
       circle(posX, posY, 15);
       fill(10);
       circle(posX, (posY+60), 15);
-      graph.drawArrow(posX, posY+30, myKO);
-    }  
-    text(match,(40 + (pageMatch) * spacing),940);
+    }
+    graph.drawArrow(posX, posY+30, myKO);
+    fill(255);
+    text(match, posX, 940);
   }
   void displayHeatMap(int match) {
-    float endY = map(calculateKOs(match), 0, 8, 920, 200);
+    float endY = map(calculateKOs(match), 0, 8, 840, 200);
     int endX = 40 + (width-80)/100 * (match - ((dataPage-1)*25));
-    float startY = map(calculateKOs(match-1), 0, 8, 920, 200);
+    float startY = map(calculateKOs(match-1), 0, 8, 840, 200);
     int startX = 40 + (width-80)/100 * ((match-1) - ((dataPage-1)*25));
     fill(10);
     setGradient(startX, startY, endY, endX);
@@ -72,18 +73,30 @@ class KOEvent {
       float posYOne = lerp(startY, endY, part1);
       float posXTwo = lerp(startX, endX, part2);
       float posYTwo = lerp(startY, endY, part2);
-      float amp = map(posYOne,40,1080,0.0,1.0);
+      float amp = map(posYOne, 40, 1080, 0.0, 1.0);
       // Self Note: Blue - (0,82,255), Red - (255,0,0), Orange - (255,128,0)
-      gradient = lerpColor(color(255,0,0),color(0,82,255),amp);
+      gradient = lerpColor(color(255, 0, 0), color(0, 82, 255), amp);
       stroke(gradient);
-      
-      line(posXOne,posYOne,posXTwo,posYTwo);
-      // Gap of 18 on X, Gap of 75 on Y
-      text(i,(40+(18*i)),940);
+
+      line(posXOne, posYOne, posXTwo, posYTwo);
+      // Gap of 18 on X, Gap of 77 on Y
+    }
+  }
+  void drawGrid(int m) {
+    for (int i = 0; i <= 8; i++) {
+      float gridY = map(i, 0, 8, 840, 200);
       if (i <= 8) {
-        text(i, 20,(920 - (i*75)));
+        stroke(255, 255, 255);
+        
+        text(i, 20, gridY);
+        stroke(255, 255, 255, 1f);
+        line (40, gridY, 1880, gridY);
       }
     }
-    
+    fill(0);
+    noStroke();
+    for (int i = 0; i <= 100; i++) {
+      text(i, (40 + ((width - 80) / 100.0) * i), 940);
+    }
   }
 }

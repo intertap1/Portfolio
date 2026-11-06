@@ -7,14 +7,13 @@ KOData data;
 
 void setup() {
   size(1900, 960);
-  background(255);
   data = new KOData();
   events = data.getEvents();
   graph = new KOGraph();
 }
 
 void draw() {
-  frameRate(60);
+  frameRate(1);
   graph.drawData(events,dataPage);
 };
 

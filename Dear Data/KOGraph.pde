@@ -2,58 +2,33 @@ class KOGraph {
   int MatchesPerPage = 24;
   String battleInfo = "";
   void drawData(KOEvent[] events, int page) {
-    background(255);
-    setupGraph();
+    background(90,84,84);
     switch (page) {
     case 1:
-      for (int m = 1; m<=100; m++) {
-        for (KOEvent event : events) {
-          if (event.match == m) {
-            event.displayHeatMap(m);
-          }
-        }
-      }
-      break;
-    case 2:
-      for (int m = 1; m <= 25; m++) {
-        for (KOEvent event : events) {
-          if (event.match == m) {
-            event.display();
-          }
-        }
-      }
-      break;
-    case 3:
-      for (int m = 26; m <= 50; m++) {
-
-        for (KOEvent event : events) {
-          if (event.match == m) {
-            event.display();
-          }
-        }
-      }
-      break;
-    case 4:
-      for (int m = 51; m <= 75; m++) {
-        for (KOEvent event : events) {
-          if (event.match == m) {
-            event.display();
-          }
-        }
-      }
-      break;
-    case 5:
-      for (int m = 76; m <= 100; m++) {
-        for (KOEvent event : events) {
-          if (event.match == m) {
-            event.display();
-          }
-        }
-      }
-      break;
+    for (KOEvent event : events) {
+      event.drawGrid(event.match);
+      event.displayHeatMap(event.match);
     }
-    displayBattleInfo(battleInfo);
+    break;
+
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+
+    int startMatch = (page - 2) * 25 + 1;
+    int endMatch = startMatch + 24;
+
+    for (KOEvent event : events) {
+      if (event.match >= startMatch && event.match <= endMatch) {
+        event.display();
+      }
+    }
+    break;
   }
+
+  displayBattleInfo(battleInfo);
+}
   void setupGraph() {
     float bottom = height-40;
     float top = 40;
